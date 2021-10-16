@@ -1,5 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 body {
-  font-family: "Open Sans";
   background-color: #d1e8e4;
   display: flex;
   justify-content: center;
@@ -10,19 +16,32 @@ body {
   display: block;
   max-width: 100%;
   min-height: 500px;
-  background: white;
+  background: rgba(209, 232, 228, 0.2);
   border: solid 2px darkgray;
   border-radius: 30px;
+  box-shadow: 0 0 5px 1px gray;
+  margin: 2rem auto;
+}
+.icon {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+}
+.icon img {
+  width: 50px;
+  border-radius: 50px;
 }
 .top {
-  border: solid 2px darkgray;
   border-radius: 30px;
+  color: #fff;
+  font-weight: 500;
 }
 .top::before {
   content: "";
   width: 100%;
   display: flex;
-  margin-top: 2rem;
+  margin-top: -1rem;
 }
 .todo-cd {
   padding: 30px;
@@ -45,17 +64,24 @@ body {
 .task-input {
   width: 100%;
   padding: 8px;
-  border-radius: 0 10px 0 10px;
+  border-radius: 0 0 10px 10px;
   margin-bottom: 10px;
-  border: 2px solid black;
   outline: none;
   background: none;
   color: black;
+  border: none;
+  text-align: center;
+  border-bottom: 4px solid black;
 }
 
 .btn-add-task {
-  padding: 0 8px;
+  padding: 0 10px;
   margin-left: 1rem;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 2.3rem;
+  color: #fff;
 }
 
 .mark-done {
@@ -73,4 +99,7 @@ body {
 .task-item input {
   width: 30px;
   height: 15px;
+}
+.section-task-done > .task-item {
+  opacity: 0.6;
 }
