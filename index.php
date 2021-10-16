@@ -27,6 +27,7 @@
                 <div class="section-task">
                     <!-- TODO: Section task hanya berisi task yang belum done (is_done = 0) -->
                     <?php while ($todo = $results->fetchArray()) {
+                        
                         if ($todo['is_done'] == 0) { ?>
                         <div class="task-item">
                                 <input type=
@@ -36,6 +37,7 @@
                                        value="<?php echo $todo['id'] ?>"
                                        id="todo-<?php echo $todo['id'] ?>"/>
                                 <span><?php echo $todo['name']; ?></span>
+
                             </span>
                         </div>
                     <?php }
