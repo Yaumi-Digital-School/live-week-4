@@ -27,6 +27,7 @@
                 <div class="section-task">
                     <!-- TODO: Section task hanya berisi task yang belum done (is_done = 0) -->
                     <?php while ($todo = $results->fetchArray()) { ?>
+                        <?php if($todo['is_done'] == 1) continue;?>
                         <div class="task-item">
                                 <input type=
                                        "checkbox"
