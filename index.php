@@ -34,7 +34,7 @@
                                        class="task-checkbox"
                                        value="<?php echo $todo['id'] ?>"
                                        id="todo-<?php echo $todo['id'] ?>"/>
-                                <span class="<?php if ($todo['is_done'] == 1) echo "mark-done" ?>"><?php echo $todo['name']; ?></span>
+                                <span><?php echo $todo['name']; ?></span>
                             </span>
                         </div>
                     <?php } ?>
