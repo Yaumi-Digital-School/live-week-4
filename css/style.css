@@ -1,42 +1,76 @@
 body {
-    font-family: "Open Sans";
+  font-family: "Open Sans";
+  background-color: #d1e8e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
 .container {
-    display: block;
-    max-width: 300px;
-    min-height: 500px;
-    margin: 100px auto;
-    background: lightyellow;
-    padding: 20px;
-    border: solid 2px darkgray;
-    border-radius: 8px;
+  display: block;
+  max-width: 100%;
+  min-height: 500px;
+  background: white;
+  border: solid 2px darkgray;
+  border-radius: 30px;
+}
+.top {
+  border: solid 2px darkgray;
+  border-radius: 30px;
+}
+.top::before {
+  content: "";
+  width: 100%;
+  display: flex;
+  margin-top: 2rem;
+}
+.todo-cd {
+  padding: 30px;
+  background-color: #1597e5;
+  border-radius: 0 50px 30px 30px;
+}
+.todo-cd .title {
+  text-align: center;
+  font-weight: bolder;
 }
 
 .section-input {
-    width: 100%;
+  width: 100%;
+  margin-top: 2.3rem;
+}
+.section-input form {
+  display: flex;
 }
 
 .task-input {
-    width: 80%;
-    padding: 8px;
-    border-radius: 5px;
-    margin-bottom: 10px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 0 10px 0 10px;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  outline: none;
+  background: none;
+  color: black;
 }
 
 .btn-add-task {
-    padding: 8px;
+  padding: 0 8px;
+  margin-left: 1rem;
 }
 
 .mark-done {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .task-item {
-    margin: 5px 0;
-    border: solid 1px cornflowerblue;
-    border-radius: 5px;
-    background: white;
-    padding: 5px 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background: none;
+  padding: 5px 10px;
+  font-size: 1.1rem;
+}
+.task-item input {
+  width: 30px;
+  height: 15px;
 }

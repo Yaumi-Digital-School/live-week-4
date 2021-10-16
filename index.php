@@ -17,11 +17,13 @@
     <body>
         <div class="main-app">
             <div class="container">
+              <div class="top">
+                <div class="todo-cd">
                 <h1 class="title">Todo App</h1>
                 <div class="section-input">
                     <form action="add_task.php" method="POST">
                         <input type="text" class="task-input" id="input-field" name="input_task" placeholder="Tambahkan task baru"/>
-                        <button type="submit" class="btn-add-task">+ Add</button>
+                        <button type="submit" class="btn-add-task">Add</button>
                     </form>
                 </div>
                 <div class="section-task">
@@ -57,6 +59,8 @@
                         }
                     ?>
                 </div>
+              </div>
+              </div>
             </div>
         </div>
     </body>
