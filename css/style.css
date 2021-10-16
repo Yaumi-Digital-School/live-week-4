@@ -1,0 +1,42 @@
+body {
+    font-family: "Open Sans";
+}
+
+
+.container {
+    display: block;
+    max-width: 300px;
+    min-height: 500px;
+    margin: 100px auto;
+    background: lightyellow;
+    padding: 20px;
+    border: solid 2px darkgray;
+    border-radius: 8px;
+}
+
+.section-input {
+    width: 100%;
+}
+
+.task-input {
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.btn-add-task {
+    padding: 8px;
+}
+
+.mark-done {
+    text-decoration: line-through;
+}
+
+.task-item {
+    margin: 5px 0;
+    border: solid 1px cornflowerblue;
+    border-radius: 5px;
+    background: white;
+    padding: 5px 10px;
+}
