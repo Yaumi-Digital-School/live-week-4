@@ -18,5 +18,16 @@ if ($results->fetchArray() == false) {
 while ($row = $results->fetchArray()) {
     var_dump($row);
 
+    if ($row['is_done'] === 1) {
+        $statement2 = $db->prepare("UPDATE tasks SET is_done=0, WHERE id = '$taskId'");
+        $results2 = $statement->execute();  
+    } else {
+        $statement2 = $db->prepare("UPDATE tasks SET is_done=1, WHERE id = '$taskId'");
+        $results2 = $statement->execute();
+    }
+
+
+    header('Location: index.php');
+
     //@TODO: Update is_done pada sebuah task di database
 }

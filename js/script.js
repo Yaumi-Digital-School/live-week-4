@@ -4,5 +4,3 @@ $(document).ready(function() {
         window.location.href = "change_task.php?task_id=" + taskId;
     })
 })
-
-// baru
