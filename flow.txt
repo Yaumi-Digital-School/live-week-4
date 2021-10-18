@@ -1,0 +1,9 @@
+user input new todo => is_done = 0
+
+uncompleted list => is_done = 0
+
+user check checkbox => is_done = 1
+
+completed list => is_done = 1
+
+user check checkbox in completed => is_done = 0

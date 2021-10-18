@@ -17,7 +17,6 @@ if ($results->fetchArray() == false) {
 // Update task is_done = 1 atau is_done = 0
 while ($row = $results->fetchArray()) {
     var_dump($row);
-
     //@TODO: Update is_done pada sebuah task di database
 }
 $row = $results->fetchArray();
