@@ -21,12 +21,13 @@
                 <div class="section-input">
                     <form action="add_task.php" method="POST">
                         <input type="text" class="task-input" id="input-field" name="input_task" placeholder="Tambahkan task baru"/>
-                        <button type="submit" class="btn-add-task">+ Add</button>
+                        <button type="submit" name="submit" class="btn-add-task">+ Add</button>
                     </form>
                 </div>
                 <div class="section-task">
                     <!-- TODO: Section task hanya berisi task yang belum done (is_done = 0) -->
                     <?php while ($todo = $results->fetchArray()) { ?>
+                        <?php if ($todo['is_done'] == 0) : ?>
                         <div class="task-item">
                                 <input type=
                                        "checkbox"
@@ -37,6 +38,7 @@
                                 <span class="<?php if ($todo['is_done'] == 1) echo "mark-done" ?>"><?php echo $todo['name']; ?></span>
                             </span>
                         </div>
+                        <?php endif; ?>
                     <?php } ?>
                 </div>
                 <div class="section-task-done">

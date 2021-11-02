@@ -17,6 +17,21 @@ if ($results->fetchArray() == false) {
 // Update task is_done = 1 atau is_done = 0
 while ($row = $results->fetchArray()) {
     var_dump($row);
-
     //@TODO: Update is_done pada sebuah task di database
+}
+
+// Update task is_done = 1 atau is_done = 0
+$row = $results -> fetchArray();
+
+if ($row['is_done'] == 0) {
+    $query = "UPDATE tasks SET is_done = 1 WHERE id='$taskId'";
+}else{
+    $query = "UPDATE tasks SET is_done = 0 WHERE id='$taskId'";
+}
+
+$input = $db->exec($query);
+if ($input == TRUE) {
+    header('Location: index.php');
+}else{
+    echo "Error";
 }
