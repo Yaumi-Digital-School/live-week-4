@@ -54,6 +54,9 @@
                                    id="todo-<?php echo $todo['id'] ?>"/>
                             <span class="mark-done"><?php echo $todo['name']; ?></span>
                             </span>
+                            <div class="delete">
+                                <a href="delete_task.php?id=<?php echo $todo['id']; ?>" onclick="return confirm ('Apakah anda yakin ingin menghapus task ini?');">X</a>
+                            </div>
                         </div>
                     <?php }
                         }
